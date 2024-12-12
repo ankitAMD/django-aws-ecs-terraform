@@ -2,7 +2,7 @@ venv/
 .env
 # staticfiles/
 # static_root/
-
+new.txt 
 notes.txt
 myvenv
 
