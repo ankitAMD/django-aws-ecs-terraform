@@ -9,6 +9,9 @@
 This repository contains a pre-configured development environment for Django-based applications, enabling developers to set up a robust development environment with a single command.
 
 ## Article Link: 
+
+## This project was created by [codewithmuh](https://www.codewithmuh.com)
+
 ## Youtube Video URL: https://youtu.be/o22qYKDCGbU?si=mjIZoJ0Yccf2d6dY
 
    
