@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  AWS_REGION: us-west-1                  # set this to your preferred AWS region, e.g. us-west-1
+  AWS_REGION: ap-south-1                  # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: django-app           # set this to your Amazon ECR repository name
   ECS_SERVICE: ecs-service               # set this to your Amazon ECS service name
   ECS_CLUSTER: ecs-cluster                 # set this to your Amazon ECS cluster name
@@ -53,6 +53,7 @@ jobs:
 
         echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_ENV
 
+/*
   deploy:
     name: Deploy
     runs-on: self-hosted
@@ -103,3 +104,4 @@ jobs:
       - name: Deploy Amazon ECS task definition
         run: 
           aws ecs update-service --cluster $ECS_CLUSTER --no-paginate --service $ECS_SERVICE --force-new-deployment
+*/
