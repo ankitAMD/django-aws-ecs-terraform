@@ -12,6 +12,7 @@ __pycache__/
 *$py.class
 db.sqlite3
 media/
+
 # C extensions
 *.so
 
