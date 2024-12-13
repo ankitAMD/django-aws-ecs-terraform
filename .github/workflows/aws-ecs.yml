@@ -75,6 +75,6 @@ jobs:
         id: deploy
         run: |
           # Update ECS Service with the new task definition
-          aws ecs update-service --cluster $ECS_CLUSTER --service $ECS_SERVICE --task-definition $NEW_TASK_DEFINITION --force-new-deployment
+          aws ecs update-service --cluster ecs-cluster --service ecs-service --task-definition ecs-app-task --force-new-deployment
   
       
