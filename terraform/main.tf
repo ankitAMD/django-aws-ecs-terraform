@@ -36,7 +36,7 @@ module "logs" {
 
 module "remote_backend" {
   source              = "./modules/backend"
-  bucket_name         = "terraform-state-backend"
+  bucket_name         = "terraform-state-ankit-backend"
   dynamodb_table_name = "terraform-state-lock-table"
 }
 
@@ -51,5 +51,5 @@ module "rds" {
 
 module "s3" {
   source = "./modules/s3_img"
-  bucket_name = "bucket-image-codewithmuh-454"
+  bucket_name = "bucket-image-ankit-454"
 }
